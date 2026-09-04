@@ -25,5 +25,6 @@ Transformo estrangulamentos operacionais em tecnologia funcional, do terreno ao 
 - IA aplicada: RAG local sobre documentação interna, modelos servidos localmente (LangChain, ChromaDB, Ollama, llama.cpp)
 
 ## Site
-- Portefólio completo: https://alexchainho.github.io/
-- Idiomas disponíveis na interface: Português (PT), Inglês (EN), Francês (FR)
+- Português: https://alexchainho.github.io/
+- English: https://alexchainho.github.io/en/
+- Français : https://alexchainho.github.io/fr/
