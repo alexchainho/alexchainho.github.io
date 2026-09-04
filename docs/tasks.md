@@ -53,6 +53,12 @@ Projecto iniciado: 2026-09-04
   - Corrigido o único ponto real: `<img id="diagram-image">` (placeholder da lightbox) sem `alt` antes de qualquer clique → adicionado `alt="Diagrama seleccionado"` como fallback
   - Falso alarme confirmado: "compressão GZIP não activa" — medição directa (`curl -D-`) confirma `Content-Encoding: gzip` já activo (127KB reais vs 395KB brutos que a ferramenta reportou)
   - Headers de segurança em falta (X-Frame-Options, CSP, Referrer-Policy, etc.) são reais mas **não configuráveis em GitHub Pages** (sem suporte a headers HTTP customizados) — só resolvível migrando para Cloudflare Pages/Netlify/Vercel
+- [x] Corrigir llms.txt (Lighthouse "Agentic Browsing", categoria nova) e rever auditoria tinycto.tv
+  - Início: 2026-09-04 21:50
+  - Lighthouse (oficial, PageSpeed Insights): 100/100/100/100 desktop, 99/100/100/100 mobile. Categoria nova "Agentic Browsing" acusava `llms.txt` sem links — spec exige `[texto](url)`; corrigido, passou a 3/3
+  - Auditoria tinycto.tv/audit (score bruto 11/100): maioria dos itens ("API, Auth, MCP & Skill Discovery", "Commerce") mede prontidão para agentes **executarem acções** (MCP servers, OAuth, API catalog) — não aplicável a portefólio estático de leitura. Sub-scores relevantes já bons: AEO 88/100, SEO Crawl 100/100, Citation Score 100/100
+  - Aplicado o que era real e barato: `robots.txt` com User-agent explícito para GPTBot/ClaudeBot/PerplexityBot/Google-Extended + `Content-Signal: ai-train=no, search=yes, ai-input=yes` (decisão do utilizador: não permitir treino de modelos com o conteúdo)
+  - Não perseguido (exige servidor dinâmico, incompatível com GitHub Pages estático): Markdown content negotiation, Link headers/API catalog, OAuth discovery, DNS-AID, Web Bot Auth, MCP server
 
 ## Histórico
 

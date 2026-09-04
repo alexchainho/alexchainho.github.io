@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
 Sitemap: https://alexchainho.github.io/sitemap.xml
