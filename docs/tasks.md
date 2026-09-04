@@ -47,6 +47,12 @@ Projecto iniciado: 2026-09-04
   - Corrigido: o URL passa a ser sempre a fonte da verdade do idioma inicial (`data-page-lang`); localStorage deixou de ser lido no arranque. Removida também a escrita em localStorage (só o botão continua a trocar idioma dentro da página, sem persistir)
   - `/en/` e `/fr/` regenerados a partir do fonte corrigido
   - Testado: clicar EN na raiz e depois navegar para `/fr/` já não mistura idiomas
+- [x] Rever auditoria SEO de terceiros (ferramenta externa, PDF)
+  - Início: 2026-09-04 21:40
+  - Score 89/100 (A). Maior parte das sugestões "AEO/GEO" são genéricas de content-marketing (topic clusters, H1 como pergunta, FAQ forçado) — não aplicadas, destruiriam a identidade de um portefólio pessoal
+  - Corrigido o único ponto real: `<img id="diagram-image">` (placeholder da lightbox) sem `alt` antes de qualquer clique → adicionado `alt="Diagrama seleccionado"` como fallback
+  - Falso alarme confirmado: "compressão GZIP não activa" — medição directa (`curl -D-`) confirma `Content-Encoding: gzip` já activo (127KB reais vs 395KB brutos que a ferramenta reportou)
+  - Headers de segurança em falta (X-Frame-Options, CSP, Referrer-Policy, etc.) são reais mas **não configuráveis em GitHub Pages** (sem suporte a headers HTTP customizados) — só resolvível migrando para Cloudflare Pages/Netlify/Vercel
 
 ## Histórico
 
