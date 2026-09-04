@@ -41,6 +41,12 @@ Projecto iniciado: 2026-09-04
   - `hreflang` cruzado (pt-PT/en/fr/x-default) no `<head>` das 3 páginas e no `sitemap.xml`
   - Descoberto e corrigido também um bug pré-existente: o Browser pane local mostrou estado inconsistente entre idiomas por cache/hot-reload — não era bug do site; validado por leitura directa dos ficheiros e `curl`
   - Testado localmente: PT, EN e FR carregam já no idioma certo antes de qualquer clique
+- [x] Corrigir mistura de idiomas entre `/`, `/en/` e `/fr/`
+  - Início: 2026-09-04 21:35
+  - Bug encontrado em produção: `/`, `/en/` e `/fr/` partilham o mesmo domínio, logo o mesmo `localStorage`. O bootstrap lia `portfolio-language` do localStorage e sobrepunha-se ao idioma da própria página — visitar a raiz e depois `/en/` misturava PT e EN na mesma página
+  - Corrigido: o URL passa a ser sempre a fonte da verdade do idioma inicial (`data-page-lang`); localStorage deixou de ser lido no arranque. Removida também a escrita em localStorage (só o botão continua a trocar idioma dentro da página, sem persistir)
+  - `/en/` e `/fr/` regenerados a partir do fonte corrigido
+  - Testado: clicar EN na raiz e depois navegar para `/fr/` já não mistura idiomas
 
 ## Histórico
 
@@ -50,3 +56,4 @@ Projecto iniciado: 2026-09-04
 - 2026-09-04 20:45 — Tema escuro por defeito.
 - 2026-09-04 21:00 — Melhorias SEO/AEO: Open Graph, Twitter Card, JSON-LD, favicon, robots.txt, sitemap.xml, llms.txt, meta author.
 - 2026-09-04 21:30 — `/en/` e `/fr/` estáticos gerados por pré-renderização (Node + jsdom), corrige indexação multi-idioma para crawlers sem JavaScript.
+- 2026-09-04 21:40 — Corrigido bug de mistura de idiomas entre páginas do mesmo domínio (localStorage deixou de decidir o idioma inicial).

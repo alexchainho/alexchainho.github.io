@@ -1901,9 +1901,6 @@ The result is one current, shareable view of planning and execution, built under
     localiseInterface();
     renderAbout();
     renderMilestoneDetails();
-    try { localStorage.setItem('portfolio-language', language); } catch (error) {
-      // O selector continua funcional quando o browser bloqueia armazenamento local.
-    }
     apply();
   }
   /**
@@ -1959,12 +1956,10 @@ The result is one current, shareable view of planning and execution, built under
   collectTranslatableNodes();
   var pageLanguage = document.documentElement.getAttribute('data-page-lang') || 'pt';
   if (pageLanguage !== 'pt' && pageLanguage !== 'en' && pageLanguage !== 'fr') pageLanguage = 'pt';
-  var savedLanguage = pageLanguage;
-  try { savedLanguage = localStorage.getItem('portfolio-language') || pageLanguage; } catch (error) {
-    // O idioma da própria página permanece o inicial quando não é possível ler a preferência.
-  }
-  if (savedLanguage !== 'pt' && savedLanguage !== 'en' && savedLanguage !== 'fr') savedLanguage = pageLanguage;
-  setLanguage(savedLanguage);
+  // O URL é sempre a fonte da verdade do idioma inicial (/, /en/, /fr/ são páginas
+  // distintas). O localStorage só regista a escolha feita pelos botões durante a
+  // navegação, não é lido aqui — evita misturar idiomas entre páginas do mesmo domínio.
+  setLanguage(pageLanguage);
 })();
 </script>
 
