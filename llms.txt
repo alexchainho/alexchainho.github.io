@@ -1,0 +1,29 @@
+# Alexandre Chainho — Portefólio técnico
+
+> Arquitectura GIS e automação operacional. Analista/desenvolvedor na Célula de Suporte Técnico de Emergência (CSTE), Unidade de Emergência de Protecção e Socorro (UEPS) da Guarda Nacional Republicana (GNR), Coimbra, Portugal.
+
+Transformo estrangulamentos operacionais em tecnologia funcional, do terreno ao centro de decisão: recolha de dados em campo, dashboards em tempo real, automação de relatórios e ferramentas de apoio à decisão.
+
+## Percurso
+- 2001–2005: Exército Português, incluindo missão NATO/SFOR na Bósnia-Herzegovina
+- Desde 2005: Guarda Nacional Republicana
+- Desde 2006: GIPS/UEPS — Grupo/Unidade de Emergência de Protecção e Socorro
+- Actual: CSTE/UEPS, Coimbra
+
+## Plataformas e marcos técnicos
+- Operação Floresta Segura (2014–presente): plataformas GIS à escala nacional para prevenção de incêndios rurais
+- Plataforma Integrada de Gestão de Emergências — PIGE (2020–presente): recolha operacional, dashboards e automação de relatórios em Python
+- Plataformas GIS do SEPNA/GNR — DIVDIR e Alertas EMEIF (2022–presente): registo, monitorização e apoio ao comando de incêndios
+- Plataforma CIPO (2026–presente): monitorização de trabalhos em ArcGIS Online e Field Maps, partilhada via PLIS da AGIF
+
+## Competências
+- Geoprocessamento: rasters e vectores à escala nacional (rasterio, geopandas, GDAL, shapely, pyproj)
+- Modelação de risco: índices FWI/CFFDRS, equações de Rothermel, scores compostos (numpy, scipy, scikit-learn, XGBoost)
+- Integração de sistemas: APIs REST, ArcGIS Online, ETL para MySQL (requests, SQLAlchemy, arcpy)
+- Automação em produção: jobs agendados, locks, auditoria, notificação de falhas
+- Interfaces: dashboards em tempo real, apps móveis, ferramentas de escritório (Next.js, React, Flutter/Dart, Tkinter, Plotly)
+- IA aplicada: RAG local sobre documentação interna, modelos servidos localmente (LangChain, ChromaDB, Ollama, llama.cpp)
+
+## Site
+- Portefólio completo: https://alexchainho.github.io/
+- Idiomas disponíveis na interface: Português (PT), Inglês (EN), Francês (FR)
