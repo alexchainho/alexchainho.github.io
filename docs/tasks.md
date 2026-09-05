@@ -63,6 +63,11 @@ Projecto iniciado: 2026-09-04
   - Início: 2026-09-05
   - Removido `<footer class="foot">` e CSS associado (`.foot`, `.foot h2/p/.meta`); expunha caminho local `D:\0_Codigos` sem necessidade
   - `/en/` e `/fr/` regenerados; testado sem footer, sem erros de consola
+- [x] Adicionar contactos (Email, LinkedIn, GitHub)
+  - Início: 2026-09-05
+  - Links no cabeçalho, logo abaixo do sub-título: `mailto:alexchainho@gmail.com`, `linkedin.com/in/alexchainho`, `github.com/alexchainho`
+  - Adicionado `sameAs` ao JSON-LD (schema.org Person) com os mesmos 2 perfis — reforça a entidade para motores de pesquisa e IA
+  - `/en/` e `/fr/` regenerados; testado visualmente, links correctos
 
 ## Histórico
 
