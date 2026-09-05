@@ -59,6 +59,10 @@ Projecto iniciado: 2026-09-04
   - Auditoria tinycto.tv/audit (score bruto 11/100): maioria dos itens ("API, Auth, MCP & Skill Discovery", "Commerce") mede prontidão para agentes **executarem acções** (MCP servers, OAuth, API catalog) — não aplicável a portefólio estático de leitura. Sub-scores relevantes já bons: AEO 88/100, SEO Crawl 100/100, Citation Score 100/100
   - Aplicado o que era real e barato: `robots.txt` com User-agent explícito para GPTBot/ClaudeBot/PerplexityBot/Google-Extended + `Content-Signal: ai-train=no, search=yes, ai-input=yes` (decisão do utilizador: não permitir treino de modelos com o conteúdo)
   - Não perseguido (exige servidor dinâmico, incompatível com GitHub Pages estático): Markdown content negotiation, Link headers/API catalog, OAuth discovery, DNS-AID, Web Bot Auth, MCP server
+- [x] Remover rodapé "Como este portefólio foi montado"
+  - Início: 2026-09-05
+  - Removido `<footer class="foot">` e CSS associado (`.foot`, `.foot h2/p/.meta`); expunha caminho local `D:\0_Codigos` sem necessidade
+  - `/en/` e `/fr/` regenerados; testado sem footer, sem erros de consola
 
 ## Histórico
 
