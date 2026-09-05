@@ -68,6 +68,12 @@ Projecto iniciado: 2026-09-04
   - Links no cabeçalho, logo abaixo do sub-título: `mailto:alexchainho@gmail.com`, `linkedin.com/in/alexchainho`, `github.com/alexchainho`
   - Adicionado `sameAs` ao JSON-LD (schema.org Person) com os mesmos 2 perfis — reforça a entidade para motores de pesquisa e IA
   - `/en/` e `/fr/` regenerados; testado visualmente, links correctos
+- [x] Adicionar Cloudflare Web Analytics
+  - Início: 2026-09-05
+  - GitHub Insights → Traffic não mede visitas ao site publicado, só ao repositório (esclarecido ao utilizador). Analytics externo era a única forma real de medir tráfego
+  - Escolhido Cloudflare Web Analytics: grátis, sem cookies, não exige apontar DNS para a Cloudflare (modo "beacon" via `<script>`, domínio continua no GitHub Pages)
+  - Snippet com token adicionado ao `<head>` das 3 páginas (`/`, `/en/`, `/fr/`)
+  - Testado localmente: sem erros de consola, sem impacto visual
 
 ## Histórico
 
