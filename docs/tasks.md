@@ -6,11 +6,22 @@ Projecto iniciado: 2026-09-04
 
 | Estado | Quantidade |
 |---|---|
-| Concluídas | 4 |
+| Concluídas | 5 |
 | Em progresso | 0 |
 | Por fazer | 0 |
 
 ## Tarefas
+
+- [x] Exportação do portefólio para PDF (script offline)
+  - Início: 2026-09-08 16:03
+  - Fim: 2026-09-08 16:40
+  - Spec: REQ-001, RNF-001, RNF-002 (todos Implementada)
+  - `tools/export-pdf.mjs` — Node + `playwright-core` (`channel:'chrome'`, usa o Chrome instalado, sem download de browser)
+  - Servidor HTTP local serve a raiz do repo (o site usa caminhos absolutos `/assets/...` que não resolvem com `file://`)
+  - Antes de exportar: espera o JS traduzir os Marcos, expande todos os `<details>`, força imagens `loading="lazy"` a eager + scroll, bloqueia o beacon do Cloudflare
+  - Saída: `pdf/portfolio-{pt,en,fr}.pdf` (~2.8 MB cada, 18 páginas), commitados no repo. `tools/node_modules/` e `pdf/*.tmp` no `.gitignore`
+  - Verificado: 3 PDF gerados (exit 0); PT com texto de detalhe dos Marcos presente; EN todo em inglês sem resíduos PT; tema escuro confirmado visualmente (screenshot pág. 1 e 8)
+  - Correr de novo sempre que o site mudar: `cd tools && npm run export-pdf`
 
 - [x] Preparar `portfolio.html` para publicação em GitHub Pages
   - Início: 2026-09-04 20:00
@@ -84,3 +95,5 @@ Projecto iniciado: 2026-09-04
 - 2026-09-04 21:00 — Melhorias SEO/AEO: Open Graph, Twitter Card, JSON-LD, favicon, robots.txt, sitemap.xml, llms.txt, meta author.
 - 2026-09-04 21:30 — `/en/` e `/fr/` estáticos gerados por pré-renderização (Node + jsdom), corrige indexação multi-idioma para crawlers sem JavaScript.
 - 2026-09-04 21:40 — Corrigido bug de mistura de idiomas entre páginas do mesmo domínio (localStorage deixou de decidir o idioma inicial).
+- 2026-09-08 16:03 — SDD adoptado no projecto: criada `docs/01-requisitos/` com REQ-001 (Exportar portefólio para PDF), RNF-001 (Código explicado) e RNF-002 (Exportação offline). Todos aprovados. Tarefa "Exportação do portefólio para PDF (script offline)" iniciada.
+- 2026-09-08 16:40 — `tools/export-pdf.mjs` concluído e verificado. Gera `pdf/portfolio-{pt,en,fr}.pdf` a partir do site (Chrome headless via `playwright-core`, Marcos expandidos, tema escuro). REQ-001 e RNF-002 passam a Implementada. Bug resolvido durante o desenvolvimento: `Promise.all` de eventos `load` de imagens pendurava o script — substituído por scroll + `waitForFunction` com limite de tempo.

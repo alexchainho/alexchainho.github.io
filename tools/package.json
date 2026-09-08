@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ferramentas locais do portefolio. Correm offline, na maquina do dono.",
+  "scripts": {
+    "export-pdf": "node export-pdf.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "^1.48.0"
+  }
+}

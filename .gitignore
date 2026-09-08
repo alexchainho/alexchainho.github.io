@@ -1,3 +1,7 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Dependências das ferramentas locais (tools/). Os PDF em pdf/ vão para o repo.
+tools/node_modules/
+pdf/*.tmp
