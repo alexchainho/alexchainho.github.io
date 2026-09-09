@@ -27,6 +27,9 @@ em [alexchainho.github.io](https://alexchainho.github.io/), em três idiomas
   `tasks.md` e no `AGENTS.md` da raiz)
 - [`40_Problemas_Solucoes/`](40_Problemas_Solucoes/) — problemas encontrados
   e resolvidos (vazio por agora)
+- [`50_Fiverr/`](50_Fiverr/Perfil_e_Gigs.md) — material comercial derivado do
+  portefólio: posicionamento, texto de perfil e gigs para a Fiverr (não faz
+  parte do site publicado)
 - [`tasks.md`](tasks.md) — gestão de tarefas, histórico completo do projecto
 - [`lessons.md`](lessons.md) — padrões de erro e regras extraídas
 

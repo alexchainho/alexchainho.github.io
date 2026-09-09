@@ -41,3 +41,33 @@ e o `Promise.all` nunca resolvia — script pendurado sem qualquer output.
   `Array.from(document.images).every(i => i.complete)` com timeout.
 - Se a espera falhar, seguir em frente com aviso — um PDF com uma imagem em
   falta é melhor que um script pendurado.
+
+---
+
+## 2026-09-09 — Contradizer o utilizador com base em dados públicos incompletos
+
+**Erro:** o utilizador disse ter gigs na Fiverr, "mas desactualizados". Extraí o
+JSON da página pública do perfil, vi `approvedGigsCount: 0` e
+`seller.gigs.nodes: []`, e escrevi que ele estava enganado — que "o perfil nunca
+teve gigs publicados" e que, a existir algo, "está em rascunho ou foi recusado".
+Enumerei os estados possíveis e **faltou-me o estado real: pausado**. O
+utilizador mostrou o painel de vendedor: 4 gigs pausados desde a criação da
+conta. Gigs pausados não aparecem na API pública nem contam para
+`approvedGigsCount` — exactamente o mesmo output que "nenhum gig".
+
+**Causa raiz:** confundi *ausência de evidência* com *evidência de ausência*. Um
+endpoint público só mostra o que é público; a inexistência de um registo aí não
+prova a inexistência do registo no sistema.
+
+**Regra para mim:**
+- Antes de contradizer o utilizador com dados obtidos de uma fonte *parcial*
+  (API pública, página não autenticada, cache), perguntar primeiro: **que
+  estados é que esta fonte, por desenho, não consegue ver?** Rascunho, pausado,
+  privado, apagado, restrito por região — todos dão o mesmo vazio.
+- A regra global manda ser objectivo e corrigir o utilizador quando ele está
+  errado. Isso continua válido — mas exige a mesma vara de medir para mim: só
+  contradizer quando a fonte é **capaz** de observar o que estou a negar.
+- Formulação correcta neste caso teria sido: *"a vista pública não mostra
+  nenhum gig — o que é compatível com estarem pausados, em rascunho ou
+  recusados. Confirma no painel qual é o caso, porque a estratégia muda."*
+  Em vez disso afirmei o mais forte dos três.

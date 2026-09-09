@@ -6,11 +6,21 @@ Projecto iniciado: 2026-09-04
 
 | Estado | Quantidade |
 |---|---|
-| Concluídas | 5 |
+| Concluídas | 6 |
 | Em progresso | 0 |
 | Por fazer | 0 |
 
 ## Tarefas
+
+- [x] Reposicionamento do perfil Fiverr a partir do portefólio
+  - Início: 2026-09-09 19:45
+  - Fim: 2026-09-09 20:21
+  - Resultado em `docs/50_Fiverr/Perfil_e_Gigs.md`
+  - Diagnóstico: perfil `alexchainho` tem 0 reviews, 0 portfolio, 0 work experience e `isActivationCompleted: false` desde Fev/2023
+  - **4 gigs pausados** desde o arranque da conta (excel sheets, transcriptions, geographical contours, python code review) — invisíveis na API pública, daí `approvedGigsCount: 0`. Decisão: mantê-los pausados e criar gigs novos, por não haver equidade a preservar
+  - Análise de mercado Fiverr: categoria GIS tem 1.300–1.600 gigs contra 21.000 em Software Development; a intersecção GIS + automação Python é o nicho escolhido (8 reviews bastam para "Fiverr's Choice" nesse nicho)
+  - Produzidos: About me (EN, ~590 car.), 3 gigs completos (título/tags/3 pacotes/descrição/FAQ), correcção de skills, 6 entradas de Portfolio e 2 de Work Experience
+  - Pendente do utilizador: confirmar rascunhos no painel de vendedor e decidir se pode nomear GNR/UEPS em contexto comercial
 
 - [x] Exportação do portefólio para PDF (script offline)
   - Início: 2026-09-08 16:03
@@ -97,3 +107,5 @@ Projecto iniciado: 2026-09-04
 - 2026-09-04 21:40 — Corrigido bug de mistura de idiomas entre páginas do mesmo domínio (localStorage deixou de decidir o idioma inicial).
 - 2026-09-08 16:03 — SDD adoptado no projecto: criada `docs/01-requisitos/` com REQ-001 (Exportar portefólio para PDF), RNF-001 (Código explicado) e RNF-002 (Exportação offline). Todos aprovados. Tarefa "Exportação do portefólio para PDF (script offline)" iniciada.
 - 2026-09-08 16:40 — `tools/export-pdf.mjs` concluído e verificado. Gera `pdf/portfolio-{pt,en,fr}.pdf` a partir do site (Chrome headless via `playwright-core`, Marcos expandidos, tema escuro). REQ-001 e RNF-002 passam a Implementada. Bug resolvido durante o desenvolvimento: `Promise.all` de eventos `load` de imagens pendurava o script — substituído por scroll + `waitForFunction` com limite de tempo.
+- 2026-09-09 20:21 - Reposicionamento do perfil Fiverr. Extraidos os dados publicos do perfil (perseus-initial-props): 0 gigs aprovados, 0 reviews, activacao de vendedor incompleta desde Fev/2023. Analise de concorrencia na Fiverr identificou a interseccao GIS + automacao Python como nicho de baixa saturacao (categoria GIS com 1.300-1.600 gigs vs 21.000 em Software Development). Escrito `docs/50_Fiverr/Perfil_e_Gigs.md` com About me, 3 gigs, skills, portfolio e work experience prontos a publicar.
+- 2026-09-09 20:40 - Correccao ao diagnostico: os 4 gigs estao PAUSADOS, nao inexistentes. Gigs pausados nao sao visiveis na API publica da Fiverr, o que produz o mesmo output que `nenhum gig`. Seccao 1 do documento reescrita; erro de metodo registado em `docs/lessons.md`. Decisao: manter os 4 pausados e criar gigs novos.
