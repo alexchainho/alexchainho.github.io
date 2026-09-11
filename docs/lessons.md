@@ -69,5 +69,26 @@ prova a inexistência do registo no sistema.
   contradizer quando a fonte é **capaz** de observar o que estou a negar.
 - Formulação correcta neste caso teria sido: *"a vista pública não mostra
   nenhum gig — o que é compatível com estarem pausados, em rascunho ou
-  recusados. Confirma no painel qual é o caso, porque a estratégia muda."*
-  Em vez disso afirmei o mais forte dos três.
+   recusados. Confirma no painel qual é o caso, porque a estratégia muda."*
+   Em vez disso afirmei o mais forte dos três.
+
+---
+
+## 2026-09-11 — Inferir períodos profissionais a partir de marcos técnicos
+
+**Erro:** ao transformar a cronologia do portefólio em *Work Experience* para
+a Fiverr, usei 2011--2014 como se fosse o período inicial na GNR. Esse intervalo
+representa apenas o início do trabalho técnico de estatística e
+georreferenciação; o utilizador ingressou na GNR em 14-11-2005. Também omiti a
+experiência anterior no Exército Português (2001--2005).
+
+**Regra para mim:**
+- Separar sempre **vínculo laboral**, **função operacional** e
+  **especialização técnica** antes de converter uma cronologia em entradas de
+  currículo.
+- Marcos de projecto ou de competências não provam, por si, datas de emprego.
+  Confirmar as datas completas com o utilizador quando o site só documenta o
+  percurso técnico.
+- Ao descrever evolução técnica, recolher a sequência real de ferramentas e
+  datas; não resumir o percurso com tecnologias actuais que ainda não eram
+  usadas no período descrito.

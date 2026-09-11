@@ -45,3 +45,22 @@ que o conteúdo do site mudar — os PDF não se actualizam sozinhos.
 5. `page.pdf()` com `printBackground: true` e media `screen` — sai igual ao site.
 
 Ver `docs/01-requisitos/rf/REQ-001_exportar_portfolio_pdf.md`.
+
+## render-fiverr-gig-images.mjs — gerar imagens para a galeria Fiverr
+
+Gera as três imagens PNG do Gig 1 em `assets/`, a 1280×769:
+
+- `fiverr-gig-gis-automation-cover.png`
+- `fiverr-gig-gis-automation-workflow.png`
+- `fiverr-gig-gis-automation-architecture.png`
+
+### Correr
+
+```
+cd tools
+npm run render-fiverr-gig-images
+```
+
+Usa o Chrome instalado via `playwright-core`, tal como a exportação PDF. As duas
+primeiras imagens são infografias; a terceira integra o diagrama público
+`assets/diagrama-floresta.png`.

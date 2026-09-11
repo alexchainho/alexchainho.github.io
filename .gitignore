@@ -5,3 +5,7 @@ Thumbs.db
 # Dependências das ferramentas locais (tools/). Os PDF em pdf/ vão para o repo.
 tools/node_modules/
 pdf/*.tmp
+
+# ── Graphify ─────────────────────────────────────────────────────────
+# Grafo de conhecimento gerado; reproduzível com 'graphify update .'
+graphify-out/

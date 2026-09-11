@@ -144,15 +144,16 @@ Isso é custo de entrada, não sinal de mau posicionamento.
 
 ## 4. "About me" reescrito
 
-> **Limite do campo na Fiverr: 600 caracteres.** A versão abaixo tem **~590**.
+> **Limite do campo na Fiverr: 600 caracteres.** A versão abaixo tem **588**
+> (contagem exacta, com margem de 12 caracteres — a estimativa "~590" da
+> primeira versão estava errada: o texto original tinha 635, acima do limite).
 
 ```
 I turn manual geospatial workflows into automated pipelines that run on their own.
 
-For over a decade I've built GIS and Python systems used daily in large-scale
-emergency operations: reports that went from hours to minutes, hundreds of PDF
-maps produced in a single run, scheduled jobs publishing live data every 10
-minutes.
+Over a decade building GIS and Python systems for emergency operations: reports
+from hours to minutes, hundreds of PDF maps in a single run, scheduled jobs
+publishing live data every 10 minutes.
 
 What I do for you:
 - Python automation for spatial data (rasterio, geopandas, GDAL, arcpy)
@@ -241,8 +242,26 @@ primeiro review.
 I will automate your GIS workflow with python, arcgis and geopandas
 ```
 
-**Categoria:** Programming & Tech → Data → Geographic Information Systems
-*(alternativa: Software Development → Script Development — testar qual traz mais impressões)*
+**Categoria e configuração confirmadas no formulário Fiverr:**
+```
+Programming & Tech → Software Development
+Service Type: Scripting
+Programming language: Python
+```
+
+**Expertise** (seleccionar)
+```
+Algorithms & Data structures
+Databases
+Debugging
+Performance
+Testing procedures
+```
+
+> Não seleccionar `Localization`: na Fiverr significa adaptação de software a
+> idioma/região, não geolocalização ou GIS. Não seleccionar frameworks de
+> frontend/backend: este Gig entrega scripts e pipelines Python, não uma
+> aplicação web.
 
 **Tags**
 ```
@@ -283,22 +302,42 @@ and I'll tell you honestly whether it is worth it.
 
 **Pacotes**
 
-| | Basic — Script | Standard — Pipeline | Premium — Production |
-|---|---|---|---|
-| **Preço** | €40 | €130 | €290 |
-| **Prazo** | 3 dias | 7 dias | 14 dias |
-| **Descrição** | One automation script for a single, well-defined task | Multi-step pipeline: read, process, export, with error handling | Scheduled production system with logging, retries and failure alerts |
-| Input formats supported | 1 | 3 | Unlimited |
-| Commented source code | ✔ | ✔ | ✔ |
-| Setup guide | ✔ | ✔ | ✔ |
-| Error handling & logging | — | ✔ | ✔ |
-| Scheduled execution | — | — | ✔ |
-| Revisions | 1 | 2 | 3 |
+|                          | Basic — Script                                        | Standard — Pipeline                                             | Premium — Production                                                 |
+| ------------------------ | ----------------------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Preço**                | $40                                                   | $130                                                            | $290                                                                 |
+| **Prazo**                | 3 dias                                                | 7 dias                                                          | 14 dias                                                              |
+| **Descrição**            | One automation script for a single, well-defined task | Multi-step pipeline: read, process, export, with error handling | Scheduled production system with logging, retries and failure alerts |
+| Pages mined/scraped      | 0 / Not applicable                                    | 0 / Not applicable                                              | 0 / Not applicable                                                   |
+| Sources mined/scraped    | 0 / Not applicable                                    | 0 / Not applicable                                              | 0 / Not applicable                                                   |
+| Install script           | —                                                     | —                                                               | —                                                                    |
+| Test script              | ✔                                                     | ✔                                                               | ✔                                                                    |
+| Task automation          | ✔                                                     | ✔                                                               | ✔                                                                    |
+| Revisions                | 1                                                     | 2                                                               | 3                                                                    |
 
-> **Racional do preço:** o mercado do nicho está a €73–€109 para vendedores com
-> badge. Como New Seller sem reviews, o Basic a €40 é entrada; o Standard e o
-> Premium é que reflectem o valor real. Não descer o Basic abaixo de €35 — a
-> €10 atrai o tipo de comprador que dá mais trabalho e pior review.
+> **Racional do preço:** o mercado do nicho foi observado a €73–€109 para vendedores com
+> badge; o formulário de criação da Fiverr fixa o preço-base do Gig em USD,
+> mesmo com a conta configurada para apresentação em EUR. Como New Seller sem
+> reviews, o Basic a $40 é entrada; o Standard e o Premium é que reflectem o
+> valor real. Não descer o Basic abaixo de $35 — a $10 atrai o tipo de comprador
+> que dá mais trabalho e pior review.
+
+**Extras:** deixar todos desmarcados nesta primeira versão. `Pages` e `Sources`
+não se aplicam a automação GIS; `Test script` e `Task automation` já pertencem
+ao serviço base; e não convém prometer instalação remota, entrega acelerada ou
+revisões adicionais antes de conhecer os pedidos iniciais.
+
+**Galeria** (carregar por esta ordem; máximo Fiverr: 3 imagens)
+
+| # | Ficheiro | Papel | Aviso incluído |
+|---|---|---|---|
+| 1 | `assets/fiverr-gig-gis-automation-cover.png` | Capa: promessa do Gig e tecnologias principais | `Illustrative workflow — tailored to your data and requirements.` |
+| 2 | `assets/fiverr-gig-gis-automation-workflow.png` | Explica o fluxo dados espaciais → pipeline Python → resultados | `Illustrative workflow — tailored to your data and requirements.` |
+| 3 | `assets/fiverr-gig-gis-automation-architecture.png` | Prova técnica: arquitectura pública Floresta Segura | `Example architecture based on real-world GIS automation work.` |
+
+As três imagens são PNG a 1280×769. As duas primeiras são infografias
+originais; a terceira adapta `assets/diagrama-floresta.png`, já público no
+portefólio. Não declarar que foram geradas por IA: os avisos distinguem
+explicitamente fluxo ilustrativo de arquitectura baseada em trabalho real.
 
 **FAQ**
 ```
@@ -449,58 +488,210 @@ to update it as your data grows.
 
 ## 7. Portfolio (secção vazia — 0 entradas)
 
-A Fiverr permite entradas com **imagem obrigatória**. Já tens material: o site
-tem **6 diagramas de arquitectura descarregáveis**.
+Fonte: os **6 diagramas de arquitectura** da secção "Marcos do trabalho
+técnico" do site (`index.html`, já em `assets/diagrama-*.png`), agrupados em
+**4 entradas** (uma por marco com diagrama — dois marcos têm 2 diagramas
+cada).
 
-> ⚠️ **Decisão pendente antes de publicar:** as entradas abaixo estão escritas
-> **sem nomear a GNR/UEPS** e sem identificar sistemas internos. O portefólio
-> público já nomeia tudo isso, mas um perfil comercial que vende serviços com
-> base em trabalho de uma força de segurança é um contexto diferente de um
-> portefólio pessoal. Confirma o que podes nomear antes de publicar.
+> **Decisão confirmada (2026-09-10):** as entradas nomeiam GNR, UEPS, SEPNA e
+> CIPO abertamente, tal como o portefólio público já faz.
+>
+> **Campos reais do formulário** (confirmados por captura do painel,
+> 2026-09-10): Project name (máx. **50** caracteres), Industry (dropdown
+> fechado, máx. 6, dezenas de opções), Project duration (dropdown),
+> **Project cost** (campo obrigatório, $), Project started on (mês + ano),
+> Project description (máx. **1400** caracteres). Corrige a versão anterior
+> desta secção, que assumia — incorrectamente — títulos longos e descrição
+> sem limite confirmado.
+>
+> **Project cost:** não é uma factura real (os projectos foram feitos como
+> funcionário da GNR, não como freelancer). É uma **estimativa de valor de
+> mercado** — quanto custaria contratar um freelancer/agência sénior para
+> construir isto de raiz, à taxa de ~€45–60/h para GIS+Python sénior,
+> ajustada à complexidade e duração de cada projecto.
+>
+> **Project started on:** os Marcos do site só têm o ano, não o mês exacto.
+> Assumido Janeiro por defeito (Fevereiro para o CIPO, cuja tempestade
+> desencadeadora foi "início de 2026") — **corrigir se souberes o mês real.**
+>
+> **Industry:** a lista é fechada com dezenas de opções; não é possível
+> adivinhar todas. Abaixo estão sugestões a procurar no filtro de texto do
+> dropdown — confirmar quais existem antes de publicar.
 
-| # | Título | Imagem sugerida | Descrição |
-|---|---|---|---|
-| 1 | National-scale GIS platform for wildfire prevention | Diagrama Floresta Segura | Field data collection, automatic administrative and cadastral enrichment, live dashboard, and weekly automated reports in PDF, Excel and shapefile. Running in operational use since 2014. |
-| 2 | Real-time emergency operations dashboard | Diagrama PIGE | Live view of ground and air teams with 1–2 minute delay, navigable timeline, nearest-unit calculation, and multi-year historical analysis. |
-| 3 | Automated territorial analysis report | Screenshot Activação GTO | Single pipeline turning one incident number into a full territorial dossier — 39+ thematic maps, weather analysis, and susceptibility modelling — in 5 to 10 minutes instead of hours. |
-| 4 | Bulk PDF map report generation | Screenshot ArcGIS Reports | Hundreds of PDF reports produced in one parallel run, with network-failure recovery. Previously days of manual work. |
-| 5 | Automated weekly cartography workflow | Screenshot CAPVI | A weekly GIS process of dozens of manual steps reduced to two guided runs, with identical output regardless of who runs it. In production since 2025. |
-| 6 | Daily wildfire risk raster (machine learning) | Mapa PoF | Per-pixel ignition probability for a whole country, combining ERA5-Land reanalysis, Canadian FWI indices, fuel, slope and fire history, trained with gradient boosting. |
+---
+
+### Entrada 1 — Operação Floresta Segura
+
+| Campo | Valor |
+|---|---|
+| **Project name** (47/50) | `National-scale GIS platform wildfire prevention` |
+| **Industry** | `Public Sector`, `Forestry` *(já confirmadas no painel)* |
+| **Project duration** | `6+ months` |
+| **Project cost** | `$28,000` — plataforma nacional completa (app de campo + dashboard + relatórios automáticos), em uso desde 2014 |
+| **Project started on** | Janeiro 2014 *(assumido)* |
+| **Imagem** | `assets/diagrama-floresta.png` |
+
+**Descrição** (1215 caracteres)
+```
+Client: Guarda Nacional Republicana (GNR), Portugal's national police force, within its SEPNA environmental protection unit.
+
+Goal: replace paper-based rural-land inspection reports with a nationwide, structured GIS workflow usable by both field officers and command staff.
+
+My role: designed and built the full GIS architecture end to end, from field data collection to the command dashboard to recurring reporting.
+
+What I built:
+- A Field Maps form for officers: captures GPS location, auto-calculates parish/municipality/district, cross-checks the DGT and BUPi land registries to identify the rural property, flags potential infringements, records the officer's post, and attaches 1-4 photos.
+- A real-time ArcGIS Experience Builder dashboard for command staff, with a permission-limited editing view, CSV export, charts and a planning area.
+- A weekly Python + ArcGIS Pro job that backs up the data and produces PDF, Excel and shapefile reports broken down by parish, municipality or district, distributed automatically via SharePoint.
+
+Result: the platform evolved from manual georeferencing methods (2011-2017) into the national system still in daily operational use today, covering all of mainland Portugal.
+```
+
+---
+
+### Entrada 2 — PIGE
+
+| Campo                    | Valor                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------ |
+| **Project name** (40/50) | `Real-time emergency operations dashboard`                                                       |
+| **Industry**             | `Public Sector`, `Government`, `Emergency Services` *(procurar se existir)*                      |
+| **Project duration**     | `6+ months`                                                                                      |
+| **Project cost**         | `$45,000` — o mais complexo dos 4 (app móvel + dashboard + evolução React + integração WhatsApp) |
+| **Project started on**   | Janeiro 2020 *(assumido)*                                                                        |
+| **Imagens**              | `assets/diagrama-pige-arcgis.png` + `assets/diagrama-pige-react.png`                             |
+
+**Descrição** (1295 caracteres)
+```
+Client: Guarda Nacional Republicana (GNR), within its UEPS Emergency Protection and Rescue Unit.
+
+Goal: give command staff a live, unified picture of ground and helicopter teams during wildfire and emergency operations, instead of fragmented radio reports.
+
+My role: designed and built the Integrated Emergency Management Platform (PIGE) end to end, then led its evolution into a faster React-based version.
+
+What I built:
+- Mobile data collection with Esri QuickCapture and Field Maps: patrol start/arrival/departure, approach photos (critical for helicopter decisions), short videos, position pings at intervals adjusted to ground or air speed, and one-tap resource requests.
+- A real-time ArcGIS Experience Builder dashboard: separate ground/helicopter timelines, a 12-hour activity map, equipment locations from the last 3 minutes, a resource-request page with nearest-unit calculation, and multi-year historical analysis.
+- PIGE Next-Gen: a React application that mirrors the dashboard with a dedicated local-data server, for faster browsing and in-page video playback.
+- A Docker service that routes QuickCapture data into predetermined WhatsApp groups for field alerts.
+
+Result: command staff now see field activity with a 1-2 minute delay, used daily to coordinate operations nationwide.
+```
+
+---
+
+### Entrada 3 — SEPNA (EMEIF + DIVDIR)
+
+| Campo                    | Valor                                                                 |
+| ------------------------ | --------------------------------------------------------------------- |
+| **Project name** (45/50) | `Wildfire command and monitoring GIS platforms`                       |
+| **Industry**             | `Public Sector`, `Environmental Services`/`Environment`, `Government` |
+| **Project duration**     | `6+ months`                                                           |
+| **Project cost**         | `$22,000` — duas plataformas, complexidade média                      |
+| **Project started on**   | Janeiro 2022 *(assumido)*                                             |
+| **Imagens**              | `assets/diagrama-emeif.png` + `assets/diagrama-divdir.png`            |
+
+**Descrição** (1356 caracteres)
+```
+Client: Guarda Nacional Republicana (GNR), within its SEPNA environmental and forest protection unit.
+
+Goal: unify incoming forest-fire-related reports from many different sources into one structured, auditable record, and give command staff a single live view for decision-making.
+
+My role: designed and built two complementary platforms end to end.
+
+What I built:
+- EMEIF Alerts: a reporting system covering four report sources - fixed surveillance (watchtowers, forest video), mobile patrols (GNR, UEPS, fire service, municipal, ICNF, Army), public 112 calls, and aerial surveillance (drones, helicopters). Includes a dashboard by surveillance type, a filtered map, a full record list with CSV export, automatic calculation-error checks, and a guided editing form.
+- DIVDIR: the main command-support platform, with a live timeline of active ANEPC incidents, a daily-alert indicator, UEPS helicopter-team records with photos/video, Air Force drone planning, watchtower visibility mapping, and links to national weather and civil-protection data.
+- A local bot that automatically converts incoming Excel-based field reports into published feature layers, keeping source records and command view in sync.
+
+Result: two platforms in daily operational use, reducing manual data conversion and improving consistency between field reports and command decisions.
+```
+
+---
+
+### Entrada 4 — CIPO
+
+| Campo                    | Valor                                               |
+| ------------------------ | --------------------------------------------------- |
+| **Project name** (44/50) | `Multi-agency work-monitoring platform (CIPO)`      |
+| **Industry**             | `Public Sector`, `Government`, `Forestry`           |
+| **Project duration**     | `6+ months`                                         |
+| **Project cost**         | `$15,000` — o mais pequeno, resposta rápida a crise |
+| **Project started on**   | Fevereiro 2026 *(tempestade em "início de 2026")*   |
+| **Imagem**               | `assets/diagrama-cipo.png`                          |
+
+**Descrição** (1217 caracteres)
+```
+Client: Guarda Nacional Republicana (GNR), as part of CIPO - Integrated Command for Prevention and Operations, a multi-agency response to severe storm damage in central Portugal.
+
+Goal: after Storm Kristin, coordinate forest-road clearance and prevention work across several agencies and give command staff a single reliable view of planning versus execution.
+
+My role: designed and built the work-monitoring platform, from field data collection to the daily situation report.
+
+What I built:
+- A Field Maps layer for field teams to record and validate completed areas and road segments directly, without a separate reporting step.
+- A script that converts shared multi-agency planning (Google Sheets from GNR, FEPS, UEPS, ICNF, Armed Forces and municipalities) into ArcGIS Online feature layers.
+- A daily process that cross-checks planning against field-validated execution, fills in missing administrative data (parish, municipality, district, NUTS), generates the daily SITREP, republishes the feature layer, shares it with AGIF GeoSiFOR, and creates a local backup via Google Drive.
+
+Result: a platform that keeps multiple agencies working from the same up-to-date picture of prevention work, still in active use.
+```
+
+---
+
+### Descartado desta versão
+
+As 4 entradas antigas baseadas noutras secções do site (Activação GTO, ArcGIS
+Reports, CAPVI, PoF) saíram do Portfolio da Fiverr — não são "Marcos" e
+misturavam a fonte das imagens. Continuam disponíveis como material dos Gigs
+2 e 3 (secção 6) se fizer sentido usá-las aí mais tarde.
 
 ---
 
 ## 8. Work Experience (secção vazia — 0 entradas)
 
-Mesma ressalva da secção 7 quanto a nomear entidades.
+> **Decisão confirmada (2026-09-11):** usar três entradas para representar a
+> cronologia completa: Exército Português (2001--2005), serviço contínuo na
+> GNR (desde 14 de Novembro de 2005) e a especialização técnica em GIS dentro
+> da GNR (desde 2011). Nas duas entradas GNR, Company = `Guarda Nacional
+> Republicana (GNR)`, nome que abrange GIPS, SEPNA, UEPS e o programa
+> multi-agência CIPO.
 
-### Versão A — sem nomear a entidade (mais segura)
+| Campo           | Valor                                                                                                      |
+| --------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Title**       | Military Service Member                                                                                    |
+| **Company**     | Portuguese Army                                                                                            |
+| **Period**      | Sep 2001 – Nov 2005                                                                                        |
+| **Description** | Served in the Portuguese Army from 2001 to 2005, beginning at the Escola Prática de Infantaria in Mafra and including an international NATO/SFOR mission in Bosnia and Herzegovina from 2002 to 2003. Alongside military and operational training, developed practical office and information-management skills with Microsoft Excel and Word: creating small structured tables, organising operational information, and preparing clear documents. This was the foundation for the data analysis and structured reporting work developed later in emergency operations. |
 
-| Campo | Valor |
-|---|---|
-| **Title** | GIS Analyst & Automation Developer |
-| **Company** | Emergency & Civil Protection Sector — Portugal |
-| **Period** | 2014 – Present |
-| **Description** | Design and maintenance of national-scale GIS platforms and Python automation for emergency and wildfire-prevention operations. Field data collection systems, real-time dashboards, risk modelling, and scheduled production pipelines running from 10-minute to weekly cadence. |
+| Campo           | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**       | GNR Operational Officer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Company**     | Guarda Nacional Republicana (GNR)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Period**      | Nov 2005 – Present                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Description** | Continuous operational service in Portugal's National Republican Guard since November 2005. Joined the GIPS Emergency Protection and Rescue Group in May 2006, serving in helicopter-transported wildfire-fighting teams before moving to the situation room to monitor and follow GIPS operational activity. Before 2011, I developed the reporting and data-handling capabilities needed in that environment: Excel reports with coordinate fields, consolidation of reports into other Excel data files, and VBA macros that converted records into KML files. Those processes created the first georeferenced GIPS data and connected field activity to a common operational picture. I continued in GIPS's successor, the UEPS, from 2018. This practical experience of field teams, command needs and real reporting constraints remains the basis for my technical work. |
 
-| Campo | Valor |
-|---|---|
-| **Title** | Operational Data Analyst |
-| **Company** | Emergency & Civil Protection Sector — Portugal |
-| **Period** | 2011 – 2014 |
-| **Description** | Built the first structured methods for operational statistics and georeferencing of incidents, including a pilot programme for preventive land inspection. |
-
-### Versão B — nomeando (só se autorizado)
-
-Substituir `Company` por `Guarda Nacional Republicana — Emergency Protection
-and Rescue Unit (UEPS)`. Tem mais peso de credibilidade, mas expõe a entidade
-num contexto comercial.
+| Campo           | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Title**       | GIS Analyst & Automation Developer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Company**     | Guarda Nacional Republicana (GNR)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Period**      | 2011 – Present                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Description** | Since 2011, I have turned operational information needs into GIS systems and automation. I started with incident statistics and georeferencing from Excel reports containing coordinate fields, using VBA to consolidate data and create KML files. From 2014, the first operational platforms combined Excel and Google Earth; the workflows then moved to QGIS in 2017-2018, ArcMap from 2019, and later ArcGIS Online and ArcGIS Pro. I began learning Python through short courses in 2022. From 2023, AI-assisted development enabled me to turn operational needs into my own tools more quickly. I now design and maintain national-scale GIS platforms for GNR units, including field data collection, automatic administrative and cadastral enrichment, real-time dashboards, map and report production, controlled data-sharing workflows, and Python pipelines. Current work includes authenticated REST API integrations, ArcGIS Online publishing, PDF, Excel and geographic exports, scheduled processes from every 10 minutes to weekly, risk and weather data pipelines, and the multi-agency CIPO work-monitoring programme. The focus is to replace repeatable manual work with reliable, documented systems that operators can use and maintain. |
 
 ### Education
 
-Não tens formação académica formal na área — e isso está assumido no
-portefólio (*"a minha formação técnica é autodidacta"*). **Deixar a secção
-vazia é melhor do que preencher com formação irrelevante.** A prova aqui é o
-Portfolio (secção 7), com números, não credenciais.
+Incluir apenas a formação actual. As matrículas anteriores não concluídas não
+devem constar no perfil público.
+
+| Campo | Valor |
+|---|---|
+| **Institution** | Universidade Aberta |
+| **Degree** | Bachelor's Degree in Computer Engineering |
+| **Field of study** | Computer Engineering |
+| **Start date** | September 2026 |
+| **Status** | Enrolled — classes begin on 14 September 2026 |
+
+> Não declarar unidades curriculares concluídas ou uma data de fim enquanto o
+> curso não tiver começado. A experiência demonstrada no Portfolio continua a
+> ser a principal prova técnica do perfil.
 
 ---
 
@@ -509,13 +700,16 @@ Portfolio (secção 7), com números, não credenciais.
 - [x] Confirmar o estado dos gigs no painel — **4 pausados**, a manter pausados
 - [ ] Verificar se falta algum passo de activação de vendedor
       (`isActivationCompleted: false` na raiz do payload)
-- [ ] Decidir se pode nomear GNR/UEPS no perfil comercial
+- [x] Decidir se pode nomear GNR/UEPS no perfil comercial — **sim**, decidido 2026-09-10
 - [ ] Corrigir idioma: Inglês → `Fluent` (ou remover a afirmação do About)
-- [ ] Substituir o texto "About me" (secção 4)
+- [ ] Colar o texto "About me" no painel (texto final pronto, 588 car. — secção 4)
 - [ ] Corrigir skills: remover 5, adicionar 4, corrigir Python para `PRO` (secção 5)
 - [ ] Publicar **apenas o Gig 1** (secção 6)
-- [ ] Preparar as 6 imagens do Portfolio e criar as entradas (secção 7)
-- [ ] Criar as 2 entradas de Work Experience (secção 8)
+- [ ] Criar as 4 entradas de Portfolio no painel: nome, indústria (confirmar
+      no dropdown), duração, **custo estimado**, data de início e descrição —
+      tudo pronto na secção 7, imagens já existem em `assets/`
+- [ ] Criar as 3 entradas de Work Experience (texto pronto, cronologia completa — secção 8)
+- [ ] Criar a entrada de Education: Universidade Aberta, Engenharia Informática, início em Setembro de 2026 (secção 8)
 - [ ] Após o 1.º review → publicar Gig 2
 - [ ] Após o 2.º review → publicar Gig 3
 - [ ] Após 3–5 reviews → avaliar abertura do nicho secundário (IA local / RAG)
@@ -528,3 +722,10 @@ Portfolio (secção 7), com números, não credenciais.
 |---|---|
 | 2026-09-09 | Criação do documento. Diagnóstico do perfil, análise de mercado, posicionamento, About me, skills, 3 gigs, portfolio e work experience. |
 | 2026-09-09 | **Correcção da secção 1.** A conclusão "nunca teve gigs publicados" estava errada: existem 4 gigs **pausados**, invisíveis à API pública. Acrescentada a tabela dos 4, a decisão de criar novos em vez de editar, e o aviso de que as métricas a `0` no painel são tautológicas (filtro de 30 dias sobre gigs pausados). Erro registado em `docs/lessons.md`. |
+| 2026-09-10 | **About me corrigido:** a contagem "~590" estava errada (real: 635, acima do limite de 600). Texto reduzido para 588 caracteres. **Portfolio (secção 7) reescrito:** as 4 entradas passam a espelhar directamente os "Marcos do trabalho técnico" do site (Floresta Segura, PIGE, SEPNA, CIPO), com as 6 imagens já existentes em `assets/diagrama-*.png` e texto adaptado da versão inglesa do site (`en/index.html`). Saem as 4 entradas antigas de outras secções do site (GTO, ArcGIS Reports, CAPVI, PoF). **Decisão tomada:** nomear GNR/UEPS/SEPNA/CIPO abertamente no perfil comercial — aplicado também à secção 8 (Work Experience), que deixa de ter duas versões (A/B) e passa a nomear "Guarda Nacional Republicana (GNR)" directamente. |
+| 2026-09-10 | **Correcção dos campos do Portfolio**, a partir de captura de ecrã do formulário real da Fiverr: Project name tem limite de **50** caracteres (não os títulos longos assumidos antes), Project description tem limite de **1400** (não ~400-460 como se assumira sem confirmação), e existem 3 campos novos não previstos — Industry (dropdown fechado), Project duration e **Project cost** (obrigatório, em $). Descrições das 4 entradas reescritas para usar o espaço até 1400 caracteres, no formato client/goal/role/what-I-built/result. Custo de cada projecto definido por estimativa de valor de mercado (não é factura real — os projectos foram feitos como funcionário da GNR), explicitado no documento para não ser lido como facto. Datas de início assumidas a partir do ano dos Marcos (mês não disponível na fonte), marcadas para confirmação. |
+| 2026-09-11 | **Work Experience corrigida:** a GNR não começa em 2011; o vínculo é contínuo desde 14-11-2005. A secção passa de 2 para 3 entradas: Exército Português (Set/2001--Nov/2005, incluindo NATO/SFOR), GNR operacional (Nov/2005--presente) e especialização GIS/automação dentro da GNR (2011--presente). |
+| 2026-09-11 | **Descrições de Work Experience expandidas:** adaptadas ao limite confirmado de 2.000 caracteres por entrada. A experiência no Exército passa a incluir a aprendizagem prática de Excel e Word (tabelas pequenas e documentos); as entradas GNR operacional e GIS detalham contexto, responsabilidades e resultados sem alterar a cronologia. |
+| 2026-09-11 | **Cronologia técnica e Education corrigidas:** Exército começa na Escola Prática de Infantaria, Mafra. Antes de 2011, a experiência GNR inclui equipas helitransportadas, sala de situação e os primeiros dados georreferenciados GIPS por Excel/VBA/KML. A progressão técnica passa a explicitar Excel/Google Earth (2014), QGIS (2017--2018), ArcMap/ArcGIS (desde 2019), Python (desde 2022) e ferramentas próprias aceleradas por IA (desde 2023). Education deixa de ficar vazia: matrícula actual na Universidade Aberta, Engenharia Informática, início em Set/2026. |
+| 2026-09-11 | **Gig 1 alinhado com o formulário Fiverr:** categoria confirmada como Programming & Tech → Software Development, Service Type Scripting e Python. Documentadas as cinco opções de Expertise adequadas; `Localization` excluída por significar localização linguística/regional, não GIS. A tabela dos pacotes passa a usar os campos reais do formulário (pages/sources mined, instalação, teste e automação), e os preços passam de EUR para o USD exigido no criador de Gigs. |
+| 2026-09-11 | **Galeria do Gig 1 criada:** três PNG 1280×769 em `assets/`, por ordem de promessa comercial, fluxo ilustrativo e arquitectura técnica real. Os avisos declaram o carácter ilustrativo das duas primeiras e a origem real da terceira, sem alegar geração por IA. |

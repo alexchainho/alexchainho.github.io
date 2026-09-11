@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Ferramentas locais do portefolio. Correm offline, na maquina do dono.",
   "scripts": {
-    "export-pdf": "node export-pdf.mjs"
+    "export-pdf": "node export-pdf.mjs",
+    "render-fiverr-gig-images": "node render-fiverr-gig-images.mjs"
   },
   "dependencies": {
     "playwright-core": "^1.48.0"

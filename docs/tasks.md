@@ -6,21 +6,44 @@ Projecto iniciado: 2026-09-04
 
 | Estado | Quantidade |
 |---|---|
-| Concluídas | 6 |
+| Concluídas | 8 |
 | Em progresso | 0 |
 | Por fazer | 0 |
 
 ## Tarefas
 
+- [x] Configurar o Gig 1 na Fiverr
+  - Início: 2026-09-11 18:30
+  - Fim: 2026-09-11 19:05
+  - Categoria confirmada: `Programming & Tech → Software Development`; Service Type: `Scripting`; linguagem: `Python`.
+  - Actualizados em `docs/50_Fiverr/Perfil_e_Gigs.md` os atributos técnicos, os campos reais dos pacotes e os preços em USD.
+  - Criadas e verificadas três imagens PNG 1280×769 para a galeria; configuração concluída e Gig publicado no painel.
+  - 5 tags confirmadas no painel (`gis automation`, `python script`, `arcgis`, `geospatial`, `geopandas`); 4 entradas de Portfolio visíveis no perfil.
+  - Gig 2 fica para daqui a 1–2 dias.
+
+- [x] Actualizar a cronologia profissional publicada
+  - Início: 2026-09-11 17:40
+  - Fim: 2026-09-11 18:05
+  - `index.html`: percurso complementado com equipas helitransportadas no GIPS e sala de situação; marcos técnicos corrigidos para Excel/VBA/KML, QGIS, ArcGIS e Python.
+  - `en/index.html` e `fr/index.html`: regenerados pela tradução do `index.html`.
+  - `pdf/portfolio-{pt,en,fr}.pdf`: regenerados e verificados por execução concluída de `npm run export-pdf`.
+  - Decisão: a matrícula na Universidade Aberta não é publicada antes de as aulas começarem; não são expostas matrículas interrompidas nem dados familiares.
+
 - [x] Reposicionamento do perfil Fiverr a partir do portefólio
   - Início: 2026-09-09 19:45
-  - Fim: 2026-09-09 20:21
+  - Fim: 2026-09-09 20:21 (retomado 2026-09-10 20:26)
   - Resultado em `docs/50_Fiverr/Perfil_e_Gigs.md`
   - Diagnóstico: perfil `alexchainho` tem 0 reviews, 0 portfolio, 0 work experience e `isActivationCompleted: false` desde Fev/2023
   - **4 gigs pausados** desde o arranque da conta (excel sheets, transcriptions, geographical contours, python code review) — invisíveis na API pública, daí `approvedGigsCount: 0`. Decisão: mantê-los pausados e criar gigs novos, por não haver equidade a preservar
   - Análise de mercado Fiverr: categoria GIS tem 1.300–1.600 gigs contra 21.000 em Software Development; a intersecção GIS + automação Python é o nicho escolhido (8 reviews bastam para "Fiverr's Choice" nesse nicho)
-  - Produzidos: About me (EN, ~590 car.), 3 gigs completos (título/tags/3 pacotes/descrição/FAQ), correcção de skills, 6 entradas de Portfolio e 2 de Work Experience
-  - Pendente do utilizador: confirmar rascunhos no painel de vendedor e decidir se pode nomear GNR/UEPS em contexto comercial
+   - Produzidos: About me (EN, 3 gigs completos (título/tags/3 pacotes/descrição/FAQ), correcção de skills, 4 entradas de Portfolio e 3 de Work Experience
+  - **2026-09-10:** corrigida a contagem do About me (635→588 caracteres, o limite é 600). Portfolio reescrito para espelhar os 4 "Marcos do trabalho técnico" do site (Floresta Segura, PIGE, SEPNA, CIPO), usando as 6 imagens já existentes em `assets/diagrama-*.png`. Decisão tomada: nomear GNR/UEPS/SEPNA/CIPO abertamente — aplicada ao Portfolio e à Work Experience (deixa de ter versão A/B)
+   - **2026-09-10 (2.ª correcção):** a partir de captura real do formulário da Fiverr, corrigidos os campos assumidos: Project name ≤50 caracteres (não os títulos longos anteriores), Project description até 1400 (não ~450), mais 3 campos novos — Industry, Project duration, Project cost (obrigatório). Descrições das 4 entradas reescritas para o novo limite; custo de cada projecto definido por estimativa de valor de mercado (documentado como estimativa, não factura real)
+   - **2026-09-11 (3.ª correcção):** Work Experience passa de 2 para 3 entradas. O vínculo GNR é contínuo desde 14-11-2005, não desde 2011; 2011 marca apenas a especialização técnica. Acrescentada a entrada do Exército Português (2001--2005, incluindo NATO/SFOR).
+   - **2026-09-11 (4.ª correcção):** descrições de Work Experience expandidas para aproveitar o limite confirmado de 2.000 caracteres por entrada; a do Exército inclui a aprendizagem prática de Excel e Word.
+   - **2026-09-11 (5.ª correcção):** cronologia operacional e técnica detalhada: equipas helitransportadas e sala de situação GIPS antes de 2011; Excel/VBA/KML como origem da georreferenciação, seguido de Excel/Google Earth, QGIS, ArcGIS e Python. Education passa a incluir a matrícula actual na Universidade Aberta, Engenharia Informática, início em Set/2026.
+  - Sessão de 2026-09-10 encerrada às 20:57 a pedido do utilizador. Fica em aberto (não é um bloqueio, é trabalho por fazer)
+  - Pendente do utilizador: confirmar categorias de Industry existentes no dropdown da Fiverr, confirmar/corrigir o mês de início de cada projecto, verificar activação de vendedor no painel, corrigir campo de idioma para Fluent, e colar os textos finais (About me, skills, Gig 1, Portfolio, Work Experience e Education) no painel de vendedor
 
 - [x] Exportação do portefólio para PDF (script offline)
   - Início: 2026-09-08 16:03
@@ -109,3 +132,12 @@ Projecto iniciado: 2026-09-04
 - 2026-09-08 16:40 — `tools/export-pdf.mjs` concluído e verificado. Gera `pdf/portfolio-{pt,en,fr}.pdf` a partir do site (Chrome headless via `playwright-core`, Marcos expandidos, tema escuro). REQ-001 e RNF-002 passam a Implementada. Bug resolvido durante o desenvolvimento: `Promise.all` de eventos `load` de imagens pendurava o script — substituído por scroll + `waitForFunction` com limite de tempo.
 - 2026-09-09 20:21 - Reposicionamento do perfil Fiverr. Extraidos os dados publicos do perfil (perseus-initial-props): 0 gigs aprovados, 0 reviews, activacao de vendedor incompleta desde Fev/2023. Analise de concorrencia na Fiverr identificou a interseccao GIS + automacao Python como nicho de baixa saturacao (categoria GIS com 1.300-1.600 gigs vs 21.000 em Software Development). Escrito `docs/50_Fiverr/Perfil_e_Gigs.md` com About me, 3 gigs, skills, portfolio e work experience prontos a publicar.
 - 2026-09-09 20:40 - Correccao ao diagnostico: os 4 gigs estao PAUSADOS, nao inexistentes. Gigs pausados nao sao visiveis na API publica da Fiverr, o que produz o mesmo output que `nenhum gig`. Seccao 1 do documento reescrita; erro de metodo registado em `docs/lessons.md`. Decisao: manter os 4 pausados e criar gigs novos.
+- 2026-09-10 20:26 - Retomado o trabalho no perfil Fiverr. Corrigida a contagem de caracteres do About me (o draft de 09-09 tinha 635 caracteres, nao ~590 como estava anotado - acima do limite de 600; reduzido para 588). Portfolio (seccao 7) reescrito: em vez de 6 entradas mistas (2 dos Marcos do site + 4 de outras seccoes), passa a ter 4 entradas, uma por marco com diagrama (Floresta Segura, PIGE, SEPNA, CIPO), usando as 6 imagens ja existentes em `assets/diagrama-*.png` e texto adaptado de `en/index.html`. Decisao tomada com o utilizador: nomear GNR/UEPS/SEPNA/CIPO abertamente no perfil comercial, ja que o portefolio publico ja o faz sem reservas - aplicada tambem a Work Experience (secção 8), que deixa de ter duas versoes (com/sem nome) e passa a nomear "Guarda Nacional Republicana (GNR)" directamente.
+- 2026-09-10 21:15 - Utilizador enviou captura do formulario real de Portfolio da Fiverr: Project name tem limite de 50 caracteres (os titulos escritos antes tinham 60-75), Project description tem limite de 1400 (nao os ~400-460 assumidos sem confirmacao), e ha 3 campos adicionais nao previstos: Industry (dropdown fechado, dezenas de opcoes), Project duration (dropdown) e Project cost (obrigatorio, em $). Titulos das 4 entradas encurtados para caber em 50 caracteres. Descricoes reescritas para usar o espaco ate 1400 caracteres, no formato client/goal/role/what-I-built/result, com mais detalhe tecnico de cada marco (extraido de en/index.html). Custo de cada projecto definido por estimativa de valor de mercado (freelancer senior GIS+Python, ~45-60E/h), documentado explicitamente como estimativa e nao factura real, ja que os projectos foram feitos como funcionario da GNR. Datas de inicio assumidas a partir do ano de cada marco (mes nao disponivel na fonte), marcadas para confirmacao do utilizador.
+- 2026-09-11 17:06 - Corrigida a cronologia de Work Experience da Fiverr com confirmação do utilizador: Exército Português de Set/2001 a 14-11-2005 (inclui missão NATO/SFOR em 2002-2003); GNR desde 14-11-2005, com especialização técnica GIS/automação iniciada em 2011. A secção passa a ter 3 entradas em vez de 2. Erro de método registado em `docs/lessons.md`.
+- 2026-09-11 17:21 - Expandidas as três descrições de Work Experience para o limite confirmado de 2.000 caracteres da Fiverr. A entrada do Exército passa a explicar a aprendizagem prática de Microsoft Excel e Word; as entradas GNR operacional e GIS detalham o contexto operacional, responsabilidades técnicas e resultados.
+- 2026-09-11 17:40 - Corrigida a progressão real do percurso profissional para a Fiverr: Escola Prática de Infantaria em Mafra; equipas helitransportadas e sala de situação GIPS antes de 2011; os primeiros dados georreferenciados GIPS foram criados por relatórios Excel com coordenadas, consolidação VBA e exportação KML. Evolução técnica documentada: Excel/Google Earth (2014), QGIS (2017-2018), ArcMap/ArcGIS Online/Pro (desde 2019), Python (desde 2022) e ferramentas próprias aceleradas por IA (desde 2023). Acrescentada Education: Universidade Aberta, Engenharia Informática, matrícula em Setembro de 2026; aulas iniciam a 14-09-2026.
+- 2026-09-11 18:05 - Cronologia pública actualizada no site: equipas helitransportadas e sala de situação GIPS, primeiros dados georreferenciados em Excel/VBA/KML e marco de evolução QGIS/ArcGIS/Python. `en/index.html` e `fr/index.html` pré-renderizados pelo motor de tradução; PDF PT/EN/FR regenerados com sucesso. Matrícula na Universidade Aberta não publicada antes do início das aulas.
+- 2026-09-11 18:30 - Iniciada a configuração do Gig 1 no formulário real da Fiverr. Corrigida a documentação: categoria Software Development, tipo Scripting, Python, Expertise aplicável, campos reais dos pacotes e preços-base em USD. Imagens do Gig ficam como próximo passo.
+- 2026-09-11 18:30 - Criadas e verificadas três imagens 1280×769 para a galeria do Gig 1: capa comercial, fluxo de automação e arquitectura técnica baseada no diagrama público Floresta Segura. Os avisos identificam explicitamente conteúdo ilustrativo e exemplo de trabalho real, sem declarar geração por IA.
+- 2026-09-11 19:05 - Gig 1 publicado na Fiverr (categoria Software Development, tipo Scripting, Python, 5 Expertise, 5 tags confirmadas no painel, 3 imagens, 4 entradas de Portfolio visíveis no perfil). Tarefa encerrada; Gig 2 agendado para daqui a 1–2 dias.
