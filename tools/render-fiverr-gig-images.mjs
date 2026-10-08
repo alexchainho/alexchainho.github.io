@@ -64,6 +64,45 @@ const images = [
         <p class="note">Example architecture based on real-world GIS automation work.</p>
       </div>`,
   },
+  {
+    name: 'fiverr-gig-map-reports-cover.png',
+    html: `
+      <div class="canvas"><div class="grid"></div>
+        <div class="header"><span class="label">Map & report automation</span><span class="brand">ALEX CHAINHO</span></div>
+        <h1 style="top:170px">Automate map<br>production.</h1>
+        <p class="lead" style="top:335px">Generate consistent maps and PDF reports from your approved layout.</p>
+        <div style="position:absolute;left:72px;top:505px"><span class="pill">Python</span><span class="pill">ArcGIS Pro</span><span class="pill">PDF exports</span></div>
+        <div style="position:absolute;right:115px;top:190px;width:310px;height:250px;padding:20px;border:2px solid #5ac4a0;background:#17313a;transform:rotate(5deg)"><div style="height:45px;border-bottom:2px solid #73d6a8"></div><div style="position:absolute;left:40px;bottom:34px;width:95px;height:95px;border-radius:50%;border:2px solid #8ce0c3"></div><div style="position:absolute;right:40px;bottom:38px;width:115px;height:65px;border-left:2px solid #8ce0c3;border-bottom:2px solid #8ce0c3"></div></div>
+        <p class="note">Illustrative workflow — tailored to your data and requirements.</p>
+      </div>`,
+  },
+  {
+    name: 'fiverr-gig-map-reports-workflow.png',
+    html: `
+      <div class="canvas"><div class="grid"></div>
+        <div class="header"><span class="label">How it works</span><span class="brand">ALEX CHAINHO</span></div>
+        <h1 style="top:130px;font-size:54px">One approved template. Every output ready.</h1>
+        <div style="position:absolute;left:72px;right:72px;top:290px;display:flex;align-items:center;justify-content:space-between">
+          <div style="width:275px"><div class="number">1</div><h2 style="font-size:29px;margin:17px 0 9px">Your data</h2><p style="color:#b9c9d3;font-size:19px;line-height:1.45">Boundaries, attributes, photos, tables and charts.</p></div>
+          <div style="width:100px;height:3px;background:#73d6a8"></div>
+          <div style="width:275px"><div class="number">2</div><h2 style="font-size:29px;margin:17px 0 9px">Your template</h2><p style="color:#b9c9d3;font-size:19px;line-height:1.45">An approved map or report layout, preserved exactly.</p></div>
+          <div style="width:100px;height:3px;background:#73d6a8"></div>
+          <div style="width:275px"><div class="number">3</div><h2 style="font-size:29px;margin:17px 0 9px">Batch outputs</h2><p style="color:#b9c9d3;font-size:19px;line-height:1.45">PDF maps and reports generated in one repeatable run.</p></div>
+        </div>
+        <p class="note">Illustrative workflow — tailored to your data and requirements.</p>
+      </div>`,
+  },
+  {
+    name: 'fiverr-gig-map-reports-recurring.png',
+    html: `
+      <div class="canvas"><div class="grid"></div>
+        <div class="header"><span class="label">Built to run again</span><span class="brand">ALEX CHAINHO</span></div>
+        <h1 style="top:120px;font-size:52px">New data in.<br>Reports out.</h1>
+        <div style="position:absolute;left:72px;top:360px;display:flex;align-items:center;gap:26px"><div style="width:178px;padding:22px;border:1px solid #35656a;background:#17313a;font-size:22px">Updated data</div><div style="font-size:42px;color:#8ce0c3">&rarr;</div><div style="width:178px;padding:22px;border:1px solid #35656a;background:#17313a;font-size:22px">Run script</div><div style="font-size:42px;color:#8ce0c3">&rarr;</div><div style="width:178px;padding:22px;border:1px solid #35656a;background:#17313a;font-size:22px">Ready PDFs</div></div>
+        <p class="lead" style="top:555px;max-width:820px">A documented automation you can re-run whenever your data changes.</p>
+        <p class="note">Illustrative workflow — tailored to your data and requirements.</p>
+      </div>`,
+  },
 ];
 
 const browser = await chromium.launch({ channel: 'chrome', headless: true });

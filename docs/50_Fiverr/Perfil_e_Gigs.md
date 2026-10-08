@@ -416,16 +416,57 @@ need. I'll tell you what the automated version looks like.
 
 **Pacotes**
 
-| | Basic | Standard | Premium |
+|                       | Basic                                       | Standard                                     | Premium                                                 |
+| --------------------- | ------------------------------------------- | -------------------------------------------- | ------------------------------------------------------- |
+| **Preço**             | €45                                         | €140                                         | €320                                                    |
+| **Prazo**             | 4 dias                                      | 8 dias                                       | 15 dias                                                 |
+| **Descrição**         | Batch map export from one existing template | Automated PDF report: maps + tables + charts | Full recurring report system, scheduled and re-runnable |
+| Map templates         | 1                                           | 2                                            | Unlimited                                               |
+| Output formats        | PDF                                         | PDF + PNG                                    | PDF, PNG, Excel, PPTX                                   |
+| Commented source code | ✔                                           | ✔                                            | ✔                                                       |
+| Scheduled execution   | —                                           | —                                            | ✔                                                       |
+| Revisions             | 1                                           | 2                                            | 3                                                       |
+
+---
+
+**Frequently Asked Questions**
+
+**Can you use my existing ArcGIS Pro map or report template?**
+
+Yes. Send the approved template and one sample of the data. The goal is to
+preserve the agreed layout while automating the repeated production work.
+
+**Do I need ArcGIS Pro?**
+
+If the automation uses an ArcGIS Pro layout or `arcpy`, you need a licensed
+ArcGIS Pro installation to run it. I can also assess QGIS or Python-only
+alternatives when you share your current workflow.
+
+**How many maps or reports can the automation generate?**
+
+The script can process a batch of records, such as one output per municipality,
+parcel, site or boundary. The package covers the automation setup; the final
+volume depends on your data and machine.
+
+**Can the reports include tables, charts and photos?**
+
+Yes. The Standard and Premium packages can combine maps with tables, charts
+and photos in an automated PDF report. Share one manual example so I can
+confirm the scope before starting.
+
+**Will I be able to run it again with new data?**
+
+Yes. Every package includes commented source code and instructions for running
+the delivery again. The Premium package can also include scheduled execution
+on an environment you provide.
+
+**Galeria** (carregar por esta ordem; máximo Fiverr: 3 imagens)
+
+| Ordem | Ficheiro | Finalidade | Legenda Fiverr |
 |---|---|---|---|
-| **Preço** | €45 | €140 | €320 |
-| **Prazo** | 4 dias | 8 dias | 15 dias |
-| **Descrição** | Batch map export from one existing template | Automated PDF report: maps + tables + charts | Full recurring report system, scheduled and re-runnable |
-| Map templates | 1 | 2 | Unlimited |
-| Output formats | PDF | PDF + PNG | PDF, PNG, Excel, PPTX |
-| Commented source code | ✔ | ✔ | ✔ |
-| Scheduled execution | — | — | ✔ |
-| Revisions | 1 | 2 | 3 |
+| 1 | `assets/fiverr-gig-map-reports-cover.png` | Capa: promessa do Gig e tecnologias principais | `Illustrative workflow — tailored to your data and requirements.` |
+| 2 | `assets/fiverr-gig-map-reports-workflow.png` | Mostra dados, modelo aprovado e exportação em lote | `Illustrative workflow — tailored to your data and requirements.` |
+| 3 | `assets/fiverr-gig-map-reports-recurring.png` | Explica a reutilização da automatização com novos dados | `Illustrative workflow — tailored to your data and requirements.` |
 
 ---
 

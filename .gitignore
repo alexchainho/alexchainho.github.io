@@ -9,3 +9,8 @@ pdf/*.tmp
 # ── Graphify ─────────────────────────────────────────────────────────
 # Grafo de conhecimento gerado; reproduzível com 'graphify update .'
 graphify-out/
+
+# ignorar pasta gigs dentro dos assets
+assets/gigs/
+
+

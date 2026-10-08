@@ -7,7 +7,7 @@ Projecto iniciado: 2026-09-04
 | Estado | Quantidade |
 |---|---|
 | Concluídas | 8 |
-| Em progresso | 0 |
+| Em progresso | 1 |
 | Por fazer | 0 |
 
 ## Tarefas
@@ -19,7 +19,11 @@ Projecto iniciado: 2026-09-04
   - Actualizados em `docs/50_Fiverr/Perfil_e_Gigs.md` os atributos técnicos, os campos reais dos pacotes e os preços em USD.
   - Criadas e verificadas três imagens PNG 1280×769 para a galeria; configuração concluída e Gig publicado no painel.
   - 5 tags confirmadas no painel (`gis automation`, `python script`, `arcgis`, `geospatial`, `geopandas`); 4 entradas de Portfolio visíveis no perfil.
-  - Gig 2 fica para daqui a 1–2 dias.
+   - Gig 2 fica para daqui a 1–2 dias.
+
+- [ ] Configurar o Gig 2 na Fiverr
+  - Início: 2026-09-14 11:17
+  - Configuração de categoria, pacotes, FAQs e imagens ilustrativas em curso.
 
 - [x] Actualizar a cronologia profissional publicada
   - Início: 2026-09-11 17:40
@@ -141,3 +145,4 @@ Projecto iniciado: 2026-09-04
 - 2026-09-11 18:30 - Iniciada a configuração do Gig 1 no formulário real da Fiverr. Corrigida a documentação: categoria Software Development, tipo Scripting, Python, Expertise aplicável, campos reais dos pacotes e preços-base em USD. Imagens do Gig ficam como próximo passo.
 - 2026-09-11 18:30 - Criadas e verificadas três imagens 1280×769 para a galeria do Gig 1: capa comercial, fluxo de automação e arquitectura técnica baseada no diagrama público Floresta Segura. Os avisos identificam explicitamente conteúdo ilustrativo e exemplo de trabalho real, sem declarar geração por IA.
 - 2026-09-11 19:05 - Gig 1 publicado na Fiverr (categoria Software Development, tipo Scripting, Python, 5 Expertise, 5 tags confirmadas no painel, 3 imagens, 4 entradas de Portfolio visíveis no perfil). Tarefa encerrada; Gig 2 agendado para daqui a 1–2 dias.
+- 2026-09-14 11:17 - Iniciada a configuração do Gig 2 da Fiverr: categoria Software Development, tipo Scripting e Python; pacotes de automatização de mapas e relatórios PDF definidos. FAQs e galeria ilustrativa em preparação.
